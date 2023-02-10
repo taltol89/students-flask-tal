@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%block title%}  add student{% endblock %}
+{% block content %}
+<form action="" method="POST">
+    <select name="course_id" id="">
+        {% for course in courses %}
+        <option value="{{course[0] }}"> {{course[1] }} </option>
+        {% endfor %}
+    </select>
+    <select name="student_id" id="">
+        {% for student in students %}
+        <option value="{{student[0] }}"> {{student[1] }} </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Add student">
+
+</form>
+{%endblock%}

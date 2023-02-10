@@ -1,0 +1,86 @@
+nav {
+    overflow: hidden;
+    background-color: black;
+    padding: 1vh;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    gap: 2vh;
+    text-align: center;
+    padding: 1vh;
+    font-size: 18px;
+}
+
+nav a:hover{
+    padding: 1.5vh;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.add-course{
+    display: flex;
+    justify-content: center;
+    /* padding: 10vh; */
+    margin-top: 20%;
+    border: solid black;
+    border-radius: 15px;
+    max-width: 50%;
+    margin-left: 25%;
+
+}
+
+form{
+    font-size: 14px;
+}
+
+input{
+    border-radius: 5px;
+    font-size: 15px;
+}
+select {
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.add-button{
+    font-size: 16px;
+    color: white;
+    background-color: rgb(102, 34, 166);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.add-button:hover{
+    font-size: 16px;
+    background-color:rgb(76, 18, 130);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+form input{
+    width:205px;
+    margin:15px;
+    
+    
+}
+
+html{
+   background-color:rgb(136, 167, 234);
+}
+
+input{
+    gap: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}

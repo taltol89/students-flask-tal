@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title%}Students{% endblock %}
+{% block content %}
+    <form action="" method="post">
+        <select name="student_id" id="">
+        {% for student in students %}
+            <option value="{{ student[0] }}">{{ student[1] }}</option>
+        {% endfor %}
+        </select>
+        <input type="submit" value="Enter">
+    </form>
+
+    <div class="student_card">
+        <div class="student_img">
+            <img src="" alt="">
+        </div>
+        <div class="student_info">
+            {% if student|length > 0 %}
+            <p>{{ student[0][0] }}</p>
+            <p>{{ student[0][1] }}</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
